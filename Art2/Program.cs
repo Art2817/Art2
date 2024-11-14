@@ -27,7 +27,9 @@ int n3 = 3;
 string client3 = "Jack";
 string product3 = "keyboard";
 float price3 = 5.50f;
+//double price3 = Convert.ToDouble(Console.ReadLine());
 string address3 = "Green Walley";
+//string address3 = Console.ReadLine();
 int a3 = 32;
 
 Console.WriteLine($"Order No {n3}");
