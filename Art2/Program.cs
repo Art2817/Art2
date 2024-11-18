@@ -1,4 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Text;
+Console.OutputEncoding = Encoding.UTF8;
+
 int n1 = 1;
 string client1 = "Alice";
 string product1 = "smartphone";
