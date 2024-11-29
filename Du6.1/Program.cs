@@ -127,30 +127,6 @@ bool Prime(int number)
 }*/
 
 //Перевірка на простоту
-/*{
-    Console.Write("Введіть число: ");
-    int number = int.Parse(Console.ReadLine());
-
-    int divisor = 0;
-
-    for (int i = 1; i <= number; i++)
-    {
-        if (number % i == 0)
-        {
-            divisor++;
-        }
-    }
-
-    if (divisor == 2)
-    {
-        Console.WriteLine("число є простим.");
-    }
-    else
-    {
-        Console.WriteLine("число не є простим");
-    }
-}*/
-
 {
     Console.Write("Введіть число: ");
     int number = int.Parse(Console.ReadLine());
