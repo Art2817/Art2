@@ -46,23 +46,28 @@ Console.OutputEncoding = Encoding.UTF8;
     Console.Write("Введіть максимальне число: ");
     int max = int.Parse(Console.ReadLine());
 
-    for (int number = 2; number <=  max; number++)
+    for (int number = 2; number <= max; number++)
     {
-        int divisor = 0;
-
-        for (int i = 1; i <= number; i++)
-        {
-            if (number % i == 0)
-            {
-                divisor++;
-            }
-        }
-
-        if (divisor == 2)
+        if (Prime(number))
         {
             Console.WriteLine(number);
         }
     }
+}
+
+bool Prime(int number)
+{
+    if (number < 2) return false;
+
+    for (int i = 2; i <= Math.Sqrt(number); i++)
+    {
+        if (number % i == 0)
+        {
+            return false;
+        }
+    }
+
+    return true;
 }*/
 
 //Перевірка паролю
@@ -122,7 +127,7 @@ Console.OutputEncoding = Encoding.UTF8;
 }*/
 
 //Перевірка на простоту
-{
+/*{
     Console.Write("Введіть число: ");
     int number = int.Parse(Console.ReadLine());
 
@@ -144,4 +149,28 @@ Console.OutputEncoding = Encoding.UTF8;
     {
         Console.WriteLine("число не є простим");
     }
+}*/
+
+{
+    Console.Write("Введіть число: ");
+    int number = int.Parse(Console.ReadLine());
+
+    if (Prime(number))
+    {
+        Console.WriteLine("Число є простим.");
+    }
+    else
+    {
+        Console.WriteLine("Число не є простим.");
+    }
+}
+
+bool Prime(int number)
+{
+    if (number < 2) return false;
+    for (int i = 2; i <= Math.Sqrt(number); i++)
+    {
+        if (number % i == 0) return false;
+    }
+    return true;
 }
