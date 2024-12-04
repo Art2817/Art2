@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Art5", "Art5\Art5.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Art6", "Art6\Art6.csproj", "{5C882EFC-CDCB-4A77-B4FF-995F75E1A8A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Du6.1", "Du6.1\Du6.1.csproj", "{D3802D84-24E6-4999-A4CA-49AAAEBC07AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Du6.1", "Du6.1\Du6.1.csproj", "{D3802D84-24E6-4999-A4CA-49AAAEBC07AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Du7.1", "Du7.1\Du7.1.csproj", "{3E7C421C-0AC7-491C-BEBD-D9E555F23181}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D3802D84-24E6-4999-A4CA-49AAAEBC07AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3802D84-24E6-4999-A4CA-49AAAEBC07AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3802D84-24E6-4999-A4CA-49AAAEBC07AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7C421C-0AC7-491C-BEBD-D9E555F23181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7C421C-0AC7-491C-BEBD-D9E555F23181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7C421C-0AC7-491C-BEBD-D9E555F23181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7C421C-0AC7-491C-BEBD-D9E555F23181}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
