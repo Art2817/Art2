@@ -14,7 +14,7 @@ Console.OutputEncoding = Encoding.UTF8;
 }*/
 
 //10.1
-{
+/*{
     Console.WriteLine("Введіть ім’я та прізвище через пробіл:");
     string input = Console.ReadLine();
 
@@ -57,4 +57,31 @@ Console.OutputEncoding = Encoding.UTF8;
     {
         Console.WriteLine("Введений рядок не може бути порожнімм");
     }
+}*/
+//10.3
+{
+    StringBuilder report = new StringBuilder();
+    report.AppendLine("Текстовий звіт");
+    report.AppendLine($"Дата: {DateTime.Now}");
+    report.AppendLine("Список подій:");
+
+    bool events = true;
+    while (events)
+    {
+        Console.WriteLine("Введіть подію (або натисніть Enter для завершення): ");
+        string? input = Console.ReadLine();
+
+        if (string.IsNullOrEmpty(input))
+        {
+            events = false;
+        }
+        else
+        {
+            report.AppendLine($"- {input}");
+        }
+    }
+
+    report.AppendLine("Кінець звіту");
+
+    Console.WriteLine(report.ToString());
 }
