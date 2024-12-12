@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dz8_part2", "Dz8_part2\Dz8_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Du10", "Du10\Du10.csproj", "{9683007A-373C-4D51-90B4-44804889F444}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dz9.1", "Dz9.1\Dz9.1.csproj", "{38D3F965-2231-4BF3-93EC-61CE4029B86B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dz9.1", "Dz9.1\Dz9.1.csproj", "{38D3F965-2231-4BF3-93EC-61CE4029B86B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dz11", "Dz11\Dz11.csproj", "{0D20ACBA-D4FF-457F-A0F5-40418CFEBA07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{38D3F965-2231-4BF3-93EC-61CE4029B86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38D3F965-2231-4BF3-93EC-61CE4029B86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38D3F965-2231-4BF3-93EC-61CE4029B86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D20ACBA-D4FF-457F-A0F5-40418CFEBA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D20ACBA-D4FF-457F-A0F5-40418CFEBA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D20ACBA-D4FF-457F-A0F5-40418CFEBA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D20ACBA-D4FF-457F-A0F5-40418CFEBA07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

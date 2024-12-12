@@ -2,8 +2,22 @@
 
 Console.OutputEncoding = Encoding.UTF8;
 //1
-/*{
-    int[] array = { 0, 1, 2, 8, 4, 5, 6, 7, 44, 9 };
+{
+    Random random = new Random();
+    int[] array = new int[10];
+
+    // Заповнення
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = random.Next(1, 11);
+    }
+
+    // Вивід
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
 
     int max = array[0];
     int secondmax = array[0];
@@ -24,23 +38,39 @@ Console.OutputEncoding = Encoding.UTF8;
         Console.WriteLine($"Другий найбільший елемент: {secondmax}");
     
    
-}*/
+}
+
+
 //2
 /*{
-    int[,] array = {
-            { 9, 5, 3 },
-            { 2, 7, 8 },
-            { 6, 4, 1 }
-        };
+    Random random = new Random();
+    int[,] array = new int[3, 3];
 
-    int rows = array.GetLength(0);
-    int cols = array.GetLength(1);
-    int[] one = new int[rows * cols];
+    // Заповнення
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = random.Next(1, 11);
+        }
+    }
+
+    // Вивід
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + "\t");
+        }
+        Console.WriteLine();
+    }
+
+    int[] one = new int [array.Length];
     int index = 0;
 
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < cols; j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
             one[index++] = array[i, j];
         }
@@ -49,26 +79,43 @@ Console.OutputEncoding = Encoding.UTF8;
     Array.Sort(one);
 
     index = 0;
-    for (int i = 0; i < rows; i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < cols; j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
             array[i, j] = one[index++];
         }
     }
 
-    for (int i = 0; i < rows; i++)
+    // Вивід
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < cols; j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
             Console.Write(array[i, j] + "\t");
         }
         Console.WriteLine();
     }
 }*/
+
+
 //3
 /*{
-    int[] array = { 0, 1, 2, 8, 4, 5, 6, 7, 44, 9 };
+    Random random = new Random();
+    int[] array = new int[10];
+
+    // Заповнення
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = random.Next(1, 11);
+    }
+
+    // Вивід
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
 
     Console.Write("Введіть індекс для видалення: ");
     int index = int.Parse(Console.ReadLine());
@@ -79,7 +126,7 @@ Console.OutputEncoding = Encoding.UTF8;
         return;
     }
 
-    
+
     int[] newarray = new int[array.Length - 1];
     for (int i = 0, j = 0; i < array.Length; i++)
     {
@@ -89,19 +136,38 @@ Console.OutputEncoding = Encoding.UTF8;
         }
     }
 
-    
-    foreach (int n in newarray)
+    // Вивід
+    for (int i = 0; i < newarray.Length; i++)
     {
-        Console.Write(n + " ");
+        Console.Write(newarray[i] + " ");
     }
+    Console.WriteLine();
 }*/
+
+
 //4
-{
-    int[,] array = {
-            { 9, 5, 3 },
-            { 2, 7, 8 },
-            { 6, 4, 1 }
-        };
+/*{
+    Random random = new Random();
+    int[,] array = new int[3, 3];
+
+    // Заповнення
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = random.Next(1, 11);
+        }
+    }
+
+    // Вивід
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + "\t");
+        }
+        Console.WriteLine();
+    }
 
     int diagonal = 0;
     int diagonal2 = 0;
@@ -116,4 +182,4 @@ Console.OutputEncoding = Encoding.UTF8;
 
     Console.WriteLine($"Сума діагоналі 1: {diagonal}");
     Console.WriteLine($"Сума діагоналі 2: {diagonal2}");
-}
+}*/
