@@ -47,7 +47,7 @@ namespace Dz14
         {
             get => balance;
 
-            private set
+            set
             {
                 if (value < 0)
                 {
