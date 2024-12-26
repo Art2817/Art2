@@ -11,12 +11,7 @@ namespace Dz14
         {
             Console.OutputEncoding = Encoding.UTF8;
             this.name = name;
-            balance = entrybalance;
-
-            if (entrybalance < 0)
-            {
-                throw new Exception("Початкова сума не може бути меншою за 0");
-            }
+            Balance = entrybalance;
             
         }
 
@@ -28,7 +23,7 @@ namespace Dz14
                 Console.WriteLine("cума не може бути відємною");
                 return;
             }
-            balance += amount;
+            Balance += amount;
             Console.WriteLine($"На рахунок {name} додано {amount:C2}. Новий баланс: {balance:C2}");
         }
 
@@ -45,14 +40,21 @@ namespace Dz14
                 Console.WriteLine("Недостатньо коштів");
                 return;
             }
-            balance -= amount;
+            Balance -= amount;
             Console.WriteLine($"З рахунку {name} знято {amount:C2}. Новий баланс: {balance:C2}");
         }
         public double Balance
         {
-            get
+            get => balance;
+
+            private set
             {
-                return balance;
+                if (value < 0)
+                {
+                    throw new Exception("Баланс не може бути від'ємним");
+                }
+
+                balance = value;
             }
         }
     }
